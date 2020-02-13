@@ -7,6 +7,7 @@ RUN \
 	&& mkdir /tmp/vmaf \
 	&& cd /tmp/vmaf \
 	&& git clone https://github.com/Netflix/vmaf.git . \
+        && git checkout tags/v1.3.15 \
 	&& cd ptools \
 	&& make \
 	&& cd ../wrapper \
